@@ -49,7 +49,7 @@ func main() {
 		}
 
 		for _, n := range result.TableNames {
-
+			fmt.Printf(*n + "\n");
 			if strings.Contains(*n, user) {
 				fmt.Println("Deleting -> " + *n)
 				deleteTable(svc, n)
